@@ -1,4 +1,4 @@
-\documentclass{report}
+\documentclass[a4paper,12pt,oneside]{report} 
 
 % Preamble
 \input{preamble/packages}
@@ -14,16 +14,17 @@
 \date{\thesubmitdate}
 \maketitle
 
-% Abstract
-% English Abtract
-\input{abstracts/en.tex}
-
-% Vietnamese Abstract
-\input{abstracts/vi.tex}
-
 % Roman numbering
 \pagenumbering{roman}
 
+% Abstract
+% English Abstract
+\input{misc/abstracts/en.tex}
+
+% Vietnamese Abstract
+\input{misc/abstracts/vi.tex}
+
+\clearpage
 % Acknowledgments
 \chapter*{Acknowledgments}
 \addcontentsline{toc}{chapter}{Acknowledgments}
