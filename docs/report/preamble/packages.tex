@@ -1,3 +1,9 @@
+% Language setting : English, Vietnamese
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
+\usepackage[vietnamese=nohyphenation]{hyphsubst}
+\usepackage[vietnamese,english]{babel}
+
 % Packages
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -11,16 +17,23 @@
 \usepackage{geometry}
 \usepackage{setspace}
 \usepackage{fancyhdr}
+\usepackage[square]{natbib}
+\usepackage{tikz}
+\usepackage[acronym]{glossaries}
 
 % Geometry settings
-\geometry{a4paper, margin=1in}
+\geometry{a4paper,top=3cm, bottom=3cm, left=3.5cm, right=2cm,marginparwidth=1.75cm}
 
 % Set line spacing
 \onehalfspacing
 
-% Header and footer
+% Header and footer 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\leftmark}
-\fancyfoot[C]{\thepage}
-\usepackage[acronym]{glossaries}
+\setlength{\headheight}{20.45002pt}
+
+\rhead{\fontsize{9}{11} \selectfont Advisor\\ \theadvisor}
+\lhead{\fontsize{9}{11} \selectfont Topic:\\ \thetopictitle}
+\rfoot{\fontsize{9}{11} \selectfont \thepage}
+\lfoot{\fontsize{9}{11} \selectfont \thestudent - \thestudentid}
+
