@@ -1,0 +1,51 @@
+\documentclass[12pt,a4paper]{report}
+
+% Preamble
+\input{preamble/packages}
+\input{preamble/commands}
+
+\begin{document}
+
+% Title Page
+\title{Your Thesis Title}
+\author{Your Name}
+\date{Month Year}
+\maketitle
+
+% Abstract
+\begin{abstract}
+    This is the abstract of the thesis.
+\end{abstract}
+
+% Acknowledgments
+\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+Thank those who helped you here.
+
+% Table of Contents
+\tableofcontents
+\listoffigures
+\listoftables
+
+% Chapters
+\input{chapters/introduction}
+\input{chapters/literature_review}
+\input{chapters/methodology}
+\input{chapters/system_design}
+\input{chapters/implementation}
+\input{chapters/evaluation}
+\input{chapters/conclusion}
+\input{chapters/future_work}
+
+% Bibliography
+\bibliographystyle{plain}
+\bibliography{thesis}
+
+% Appendices
+\appendix
+\input{appendices/appendixA}
+\input{appendices/appendixB}
+
+\end{document}
+\makeglossaries
+\printglossary[type=\acronymtype]
