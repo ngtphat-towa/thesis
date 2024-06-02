@@ -1,0 +1,61 @@
+\documentclass[a4paper,12pt,oneside]{report} 
+
+% Preamble
+\input{preamble/packages}
+\input{preamble/commands}
+\input{preamble/declares.tex}
+
+
+\begin{document}
+
+% Covers
+\input{covers/outside.tex}
+\input{covers/inside.tex}
+
+
+% Roman numbering
+\pagenumbering{roman}
+
+% Abstract
+% English Abstract
+\input{misc/abstracts/en.tex}
+
+% Vietnamese Abstract
+\input{misc/abstracts/vi.tex}
+
+\clearpage
+% Acknowledgments
+\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+Thank those who helped you here.
+
+% Table of Contents
+\tableofcontents
+\listoffigures
+\listoftables
+
+% Arabic numbering
+\pagenumbering{arabic}
+
+% Chapters
+\input{chapters/introduction}
+\input{chapters/literature_review}
+\input{chapters/methodology}
+\input{chapters/system_design}
+\input{chapters/implementation}
+\input{chapters/evaluation}
+\input{chapters/conclusion}
+\input{chapters/future_work}
+
+% Bibliography
+\bibliographystyle{plain}
+\bibliography{thesis}
+
+% Appendices
+\appendix
+\input{appendices/appendixA}
+\input{appendices/appendixB}
+
+\end{document}
+\makeglossaries
+\printglossary[type=\acronymtype]

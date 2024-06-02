@@ -1,0 +1,50 @@
+\begin{titlepage}
+
+    \begin{tikzpicture}[remember picture, overlay]
+        % Draw cover page border
+        \draw [line width=1pt]
+        ($ (current page.north west) + (3.0cm,-2.0cm) $)
+        rectangle
+        ($ (current page.south east) + (-1.5cm,1.5cm) $);
+        \draw [line width=3pt]
+        ($ (current page.north west) + (3.15cm,-2.15cm) $)
+        rectangle
+        ($ (current page.south east) + (-1.65cm,1.65cm) $);
+    \end{tikzpicture}
+    \begin{center}
+        % University and Faculty
+        \uppercasebold{\theuniversity\\}
+        \uppercasebold{\thefaculty\\[1cm]}
+
+        % Logo
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[width=3cm]{logo.png}\\[1cm]
+        \end{figure}
+
+
+        % Project type
+        \uppercasebold{\theprojecttype\\}
+        \uppercasebold{\thestudentmajor\\}
+        \uppercasebold{\theprogramtype\\ [1.5cm]}
+        \begin{LARGE}
+            \textbf{Title\\[0.5cm]}
+        \end{LARGE}
+
+        % Project title
+        \textbf{{\Large\uppercasebold{\thetopictitle}}}
+        \\[3cm]
+
+        % Student information
+        \begin{tabular}{ l l }
+            \multicolumn{2}{l}{\textbf{Student:} \thestudent}      \\
+            \multicolumn{2}{l}{\textbf{Student ID:} \thestudentid} \\
+            \multicolumn{2}{l}{\textbf{Cohort:} \thecohort}        \\
+        \end{tabular}
+        \\[3.5cm]
+
+        % Submit date
+        \textbf{\thesubmitdate}
+
+    \end{center}
+\end{titlepage}
