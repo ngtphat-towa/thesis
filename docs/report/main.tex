@@ -15,9 +15,14 @@
 \maketitle
 
 % Abstract
-\begin{abstract}
-    This is the abstract of the thesis.
-\end{abstract}
+% English Abtract
+\input{abstracts/en.tex}
+
+% Vietnamese Abstract
+\input{abstracts/vi.tex}
+
+% Roman numbering
+\pagenumbering{roman}
 
 % Acknowledgments
 \chapter*{Acknowledgments}
@@ -28,6 +33,9 @@ Thank those who helped you here.
 \tableofcontents
 \listoffigures
 \listoftables
+
+% Arabic numbering
+\pagenumbering{arabic}
 
 % Chapters
 \input{chapters/introduction}
